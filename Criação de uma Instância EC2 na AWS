@@ -1,0 +1,15 @@
+Para criar uma instância EC2 na AWS, siga os passos abaixo:
+Entre na console AWS
+
+Criar uma Instância EC2:
+No Console da AWS, acesse EC2 > Launch Instance.
+Selecione uma Amazon Machine Image (AMI), como o Ubuntu 20.04 LTS.
+Escolha o tipo de instância, por exemplo, t2.micro (instância gratuita).
+Em "Key Pair", crie ou selecione um par de chaves para acessar a instância.
+No "Security Group", permita tráfego nas portas 22 (SSH) e 80 (HTTP).
+Conectar-se à Instância via SSH:
+Após a criação da instância, obtenha o IP público da mesma.
+
+No terminal (WSL ou outro terminal), conecte-se via SSH com o comando:
+
+ssh -i "parchaves.pem" ec2-user@ec2-44-200-246-186.compute-1.amazonaws.com
