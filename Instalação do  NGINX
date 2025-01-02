@@ -17,7 +17,7 @@ sudo ufw app list
 Permita o tráfego HTTP e HTTPS:
 sudo ufw allow 'Nginx Full'
 
-6. Verificar a Instalação
+Verificar a Instalação
 Abra um navegador e acesse o endereço do servidor:
 
 Se estiver instalando localmente: http://localhost.
@@ -51,6 +51,7 @@ Adicione sua configuração personalizada, por exemplo:
        MESSAGE="O serviço $SERVICE não está em execução."
        echo "$TIMESTAMP - $SERVICE - $STATUS - $MESSAGE" >> "$LOG_DIR/offline.log"
    fi
+
 7.Teste as configurações para garantir que estejam corretas:
 Teste as configurações para garantir que estejam corretas:
 Copiar código
