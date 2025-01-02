@@ -24,6 +24,33 @@ Se estiver instalando localmente: http://localhost.
 Para um servidor remoto, use o IP do servidor.
 Você verá a página padrão do NGINX.
 
+6. Configurar o NGINX
+
+Adicione sua configuração personalizada, por exemplo:
+
+```bash
+   #!/bin/bash
+
+   # Diretório para salvar os logs
+   LOG_DIR="/var/log/nginx_status"
+   mkdir -p $LOG_DIR
+
+   # Data e hora
+   TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+
+   # Nome do serviço
+   SERVICE="nginx"
+
+   # Verificar o status do serviço
+   if systemctl is-active --quiet $SERVICE; then
+       STATUS="ONLINE"
+       MESSAGE="O serviço $SERVICE está em execução."
+       echo "$TIMESTAMP - $SERVICE - $STATUS - $MESSAGE" >> "$LOG_DIR/online.log"
+   else
+       STATUS="OFFLINE"
+       MESSAGE="O serviço $SERVICE não está em execução."
+       echo "$TIMESTAMP - $SERVICE - $STATUS - $MESSAGE" >> "$LOG_DIR/offline.log"
+   fi
 
 7.Teste as configurações para garantir que estejam corretas
 
@@ -33,4 +60,5 @@ sudo systemctl restart nginx
 8. Verificar o status do serviço:
 sudo systemctl status nginx
 
+9. Para monitorar o status do Nginx, um script de validação é criado e configurado para executar a cada 5 minutos.
 
