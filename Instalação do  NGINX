@@ -52,9 +52,7 @@ Adicione sua configuração personalizada, por exemplo:
        echo "$TIMESTAMP - $SERVICE - $STATUS - $MESSAGE" >> "$LOG_DIR/offline.log"
    fi
 
-7.Teste as configurações para garantir que estejam corretas:
-Teste as configurações para garantir que estejam corretas:
-Copiar código
+7.Teste as configurações para garantir que estejam corretas
 
 Reinicie o NGINX para aplicar as alterações:
 sudo systemctl restart nginx
