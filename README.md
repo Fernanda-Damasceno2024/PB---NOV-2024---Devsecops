@@ -33,6 +33,7 @@ Após atualizar o Sistema WSL:
 No terminal da distribuição Linux (por exemplo, Ubuntu), execute os seguintes comandos para atualizar:
 
 sudo apt update
+
 sudo apt upgrade
 
 **5. Criar uma instância EC2 na AWS**
