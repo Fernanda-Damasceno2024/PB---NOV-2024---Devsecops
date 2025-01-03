@@ -1,30 +1,31 @@
 # Atividade com monitoramento Nginx - Compass UOL | Atividade Prática 1 #PB - Novembro 2024 | DevSecOps
 Atividade devsecops - Linux e AWS na prática
 
-1. O Windows Subsystem for Linux (WSL) permite executar um sistema Linux diretamente no Windows. Para configurar o WSL, siga estas etapas:
+Instalação do WSL no Windows
+
+Para instalar o WSL (Subsistema do Windows para Linux) no Windows, siga o guia abaixo. Certifique-se de que seu sistema operacional seja Windows 10 (versão 2004 ou superior) ou Windows 11.
+
+2. Ative o WSL
+Abra o Prompt de Comando ou PowerShell como administrador.
+Clique com o botão direito no menu Iniciar e escolha Prompt de Comando (Admin) ou Windows PowerShell (Admin).
+Digite o seguinte comando e pressione Enter:
 
 wsl --install
 
+Este comando:
+Ativa os componentes necessários do WSL.
+Instala a última versão do WSL 2.
 
-O sistema será configurado automaticamente para suportar o WSL.
+3. Reinicie o computador
+Após a execução do comando acima, reinicie seu computador se solicitado.
 
-2. Escolher uma Distribuição Linux
-Após a reinicialização, acesse a Microsoft Store.
-Procure e selecione uma distribuição Linux, como o Ubuntu 20.04 LTS.
-Instale a distribuição escolhida.
+4. Escolher uma Distribuição Linux:
+Após reiniciar o sistema, acesse a Microsoft Store e selecione uma distribuição Linux, como o Ubuntu 20.04 LTS.
+Configuração Inicial do WSL:
+Após a instalação, abra a distribuição Linux instalada (como o Ubuntu) e configure o nome de usuário e senha para o ambiente Linux.
 
-3. Configuração Inicial
-Após a instalação, abra a distribuição Linux instalada (por exemplo, Ubuntu)
-Configure um nome de usuário e senha para o ambiente Linux.
-
-4. Atualizar o Sistema no WSL
-No terminal da distribuição Linux, execute os seguintes comandos para atualizar o sistema:
+Após atualizar o Sistema WSL:
+No terminal da distribuição Linux (por exemplo, Ubuntu), execute os seguintes comandos para atualizar:
 
 sudo apt update
 sudo apt upgrade
-
-5.Execute a instalação do Wsl com o comando;
-sudo apt install wsl
-
-![Captura de tela 2024-12-23 140009](https://github.com/user-attachments/assets/5edfcd30-68eb-4d77-9e4c-db781b5da6f4)
-
