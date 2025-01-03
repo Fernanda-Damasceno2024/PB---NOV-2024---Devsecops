@@ -50,7 +50,7 @@ Após a criação da instância, obtenha o IP público da mesma.
 
 No terminal com o WSL, conecte-se via SSH com o comando:
 
-ssh -i "parchaves.pem" ec2-user@ec2-44-200-246-186.compute-1.amazonaws.com
+ssh -i parchaves ec2-user@ec2-44-200-246-186.compute-1.amazonaws.com
 
 Atualize os pacotes do sistema
 Após conectar-se, atualize os pacotes instalados no sistema:
