@@ -22,6 +22,9 @@ No terminal da distribuição Linux, execute os seguintes comandos para atualiza
 
 sudo apt update
 sudo apt upgrade
-Esses passos permitem que complete a instalação e configurção básica do wsl no Windows.
+
+5.Execute a instalação do Wsl com o comando;
+sudo apt install wsl
+
 ![Captura de tela 2024-12-23 140009](https://github.com/user-attachments/assets/5edfcd30-68eb-4d77-9e4c-db781b5da6f4)
 
